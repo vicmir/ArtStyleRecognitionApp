@@ -1,6 +1,7 @@
 # Art Style Recognition Web Application
 
-**Features**
+## Features
+
 - **Art Style Recognition**: Automatically classify images into different art styles using a trained deep learning model.
 - **Image Augmentation**: Enhance the dataset with various image transformations for robust model training.
 - **User Authentication**: Secure user registration and login system.
