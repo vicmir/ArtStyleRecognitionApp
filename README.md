@@ -1,4 +1,64 @@
 # [Black Dashboard Flask](https://appseed.us/product/black-dashboard/flask/)
+# Art Style Recognition Web Application
+
+# Art Style Recognition Web Application
+
+**Features**
+- **Art Style Recognition**: Automatically classify images into different art styles using a trained deep learning model.
+- **Image Augmentation**: Enhance the dataset with various image transformations for robust model training.
+- **User Authentication**: Secure user registration and login system.
+- **Image Upload**: Users can upload images from their PC or via URL for analysis.
+- **Profile Management**: Users can manage their profiles and view the history of their uploaded images.
+- **Annotations and Descriptions**: Provide detailed annotations and descriptions of the recognized art styles.
+
+## Technology Stack
+
+- **Backend**: Flask for web development, SQLite for database management
+- **Frontend**: HTML, CSS, and JavaScript for responsive UI
+- **Machine Learning**: TensorFlow and Keras for deep learning models, Pillow for image processing
+- **Deployment**: Docker for containerization
+
+## Project Structure
+
+The project is organized as follows:
+- `app/`: Contains the Flask application and all backend logic.
+- `static/`: Static files including CSS, JavaScript, and images.
+- `templates/`: HTML templates for rendering the web pages.
+- `model/`: Pre-trained models and related scripts.
+- `tests/`: Unit and functional tests for the application.
+- `Dockerfile`: Instructions for containerizing the application.
+
+## Getting Started
+
+### Prerequisites
+- Python 3.6+
+- Docker (optional for containerization)
+
+### Installation
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/art-style-recognition.git
+    cd art-style-recognition
+    ```
+2. Install dependencies:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+3. Run the application:
+    ```sh
+    python run.py
+    ```
+
+4. Open your web browser and go to `http://127.0.0.1:5000`.
+
+## Usage
+
+- **Register/Login**: Create a new account or log in to an existing account.
+- **Upload Images**: Upload images from your PC or via URL for analysis.
+- **View Results**: Check the recognized art style and detailed description for each uploaded image.
+- **Profile Management**: Manage your profile and view the history of analyzed images.
+
 
 Open-source **[Flask Dashboard](https://appseed.us/admin-dashboards/flask/)** crafted on top of a modern `Bootstrap` design. Designed for those who like bold elements and beautiful websites, **Black Dashboard** is ready to help you create stunning websites and web apps. **Black Dashboard** is built with over 50 frontend individual elements, like buttons, inputs, navbars, nav tabs, cards, or alerts, giving you the freedom of choosing and combining.
 
