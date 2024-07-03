@@ -35,8 +35,8 @@ The project is organized as follows:
 ### Installation
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/art-style-recognition.git
-    cd art-style-recognition
+    git clone https://github.com/vicmir/ArtStyleRecognitionApp.git
+    cd ArtStyleRecognitionApp
     ```
 2. Install dependencies:
     ```sh
