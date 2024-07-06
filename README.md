@@ -1,5 +1,8 @@
 # Art Style Recognition Web Application
 
+About:
+
+
 Dataset: https://www.wikiart.org/
 
 Jupyter notebooks:
