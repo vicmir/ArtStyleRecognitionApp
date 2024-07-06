@@ -42,9 +42,9 @@ The project is organized as follows:
     cd ArtStyleRecognitionApp
     ```
 
-2. Set Up for Unix, MacOS:
+2. Set Up for `Unix`, `MacOS`:
 
-   - Install modules via `VENV`:
+- Install modules via `VENV`:
 
    ```sh
    $ virtualenv env
@@ -52,22 +52,22 @@ The project is organized as follows:
    $ pip3 install -r requirements.txt
    ```
 
-   - Set Up Flask Environment:
+- Set Up Flask Environment:
 
    ```sh
    $ export FLASK_APP=run.py
    $ export FLASK_ENV=development
    ```
 
-   - Start the app:
+- Start the app:
 
    ```sh
    $ flask run
    ```
    
-3. Set Up for Windows:
+3. Set Up for `Windows`:
 
-   - Install modules via `VENV`:
+- Install modules via `VENV`:
 
    ```sh
    $ virtualenv env
@@ -75,7 +75,7 @@ The project is organized as follows:
    $ pip3 install -r requirements.txt
    ```
 
-   - Set Up Flask Environment:
+- Set Up Flask Environment:
 
    ```sh
    $ # CMD
@@ -87,7 +87,7 @@ The project is organized as follows:
    $ $env:FLASK_ENV = "development"
    ```
 
-   - Start the app:
+- Start the app:
 
    ```sh
    $ flask run
