@@ -1,7 +1,9 @@
 # Art Style Recognition Web Application
 
 Dataset: https://www.wikiart.org/
+
 Jupyter notebooks:
+
 Template credits: https://github.com/app-generator/flask-black-dashboard
 
 ## Features
