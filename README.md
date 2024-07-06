@@ -29,18 +29,23 @@ The project is organized as follows:
 ## Getting Started
 
 ### Prerequisites
+
 - Python 3.6+
 - Docker (optional for containerization)
 
 ### Installation
+
 1. Clone the repository:
+
     ```sh
     git clone https://github.com/vicmir/ArtStyleRecognitionApp.git
     cd ArtStyleRecognitionApp
     ```
 
 2. Set Up for Unix, MacOS:
+
    - Install modules via `VENV`:
+
    ```sh
    $ virtualenv env
    $ source env/bin/activate
@@ -48,18 +53,22 @@ The project is organized as follows:
    ```
 
    - Set Up Flask Environment:
+
    ```sh
    $ export FLASK_APP=run.py
    $ export FLASK_ENV=development
    ```
 
    - Start the app:
+
    ```sh
    $ flask run
    ```
    
 3. Set Up for Windows:
+
    - Install modules via `VENV`:
+
    ```sh
    $ virtualenv env
    $ .\env\Scripts\activate
@@ -67,6 +76,7 @@ The project is organized as follows:
    ```
 
    - Set Up Flask Environment:
+
    ```sh
    $ # CMD
    $ set FLASK_APP=run.py
@@ -78,6 +88,7 @@ The project is organized as follows:
    ```
 
    - Start the app:
+
    ```sh
    $ flask run
    ```
