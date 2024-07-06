@@ -9,6 +9,10 @@
 - **Profile Management**: Users can manage their profiles and view the history of their uploaded images.
 - **Annotations and Descriptions**: Provide detailed annotations and descriptions of the recognized art styles.
 
+  Dataset: https://www.wikiart.org/
+  Jupyter notebooks:
+  Template credits: https://github.com/app-generator/flask-black-dashboard
+
 ## Technology Stack
 
 - **Backend**: Flask for web development, SQLite for database management
