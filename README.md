@@ -78,11 +78,11 @@ The project is organized as follows:
 - Set Up Flask Environment:
 
    ```sh
-   $ # CMD
+   # CMD
    $ set FLASK_APP=run.py
    $ set FLASK_ENV=development
-   $
-   $ # Powershell
+   
+   # Powershell
    $ $env:FLASK_APP = ".\run.py"
    $ $env:FLASK_ENV = "development"
    ```
