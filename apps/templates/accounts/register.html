@@ -1,6 +1,6 @@
 {% extends "layouts/base-fullscreen.html" %}
 
-{% block title %} Register {% endblock %} 
+{% block title %} Register {% endblock %}
 
 <!-- Specific Page CSS goes HERE  -->
 {% block stylesheets %}{% endblock stylesheets %}
@@ -22,25 +22,25 @@
                                     <span class="text-danger">{{ msg | safe }}</span>
                                 {% else %}
                                     <span>
-                                        Add your credentials
+                                        Please enter your details
                                     </span>
-                                {% endif %}  
-                            </h6>     
+                                {% endif %}
+                            </h6>
 
                         </div>
 
                         {% if success %}
 
                             <div class="card-footer text-center">
-                                <a href="{{ url_for('authentication_blueprint.login') }}" 
+                                <a href="{{ url_for('authentication_blueprint.login') }}"
                                    class="btn btn-fill btn-primary">Login</a>
                             </div>
 
                         {% else %}
 
                             <form role="form" method="post" action="">
-            
-                                {{ form.hidden_tag() }} 
+
+                                {{ form.hidden_tag() }}
 
                                 <div class="card-body px-5 py-3">
 
@@ -67,21 +67,21 @@
                                         </div>
                                     </div>
 
-                                    
+
                                 </div>
                                 <div class="card-footer text-center">
                                     <button type="submit" name="register" class="btn btn-fill btn-primary">Register</button>
 
                                     <br /><br />
-                                    
+
                                     <p>
                                         Have an account? <a href="{{ url_for('authentication_blueprint.login') }}" class="text-primary">Login</a>
-                                    </p> 
+                                    </p>
                                 </div>
-                            
+
                             </form>
 
-                        {% endif %} 
+                        {% endif %}
 
                     </div>
                 </div>
