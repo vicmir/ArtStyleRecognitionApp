@@ -63,10 +63,10 @@ The project is organized as follows:
 
 1. Clone the repository:
 
-    ```sh
-    git clone https://github.com/vicmir/ArtStyleRecognitionApp.git
-    cd ArtStyleRecognitionApp
-    ```
+   ```sh
+   git clone https://github.com/vicmir/ArtStyleRecognitionApp.git
+   cd ArtStyleRecognitionApp
+   ```
 
 2. Set Up for `Unix`, `MacOS`:
 
