@@ -1,9 +1,17 @@
 {% extends "layouts/base.html" %}
 
-{% block title %} User Profile {% endblock %} 
+{% block title %} User Profile {% endblock %}
 
 <!-- Specific Page CSS goes HERE  -->
-{% block stylesheets %}{% endblock stylesheets %}
+{% block stylesheets %}
+
+<style>
+  .user-button {
+     text-align: center;
+     }
+</style>
+
+{% endblock stylesheets %}
 
 {% block content %}
 
@@ -12,7 +20,7 @@
       <div class="col-md-8">
         <div class="card">
           <div class="card-header">
-            <h5 class="title">Edit Profile</h5>
+            <h5 class="title">User Profile</h5>
           </div>
 
           <div class="card-body">
@@ -25,12 +33,12 @@
 
                   <div class="alert alert-warning alert-dismissible fade show" role="alert">
                     <p class="mb-0">
-                        Please add an email address.
+                        Please enter an email address.
                     </p>
                   </div>
 
                 </div>
-      
+
               </div>
               {% endif %}
 
@@ -47,26 +55,26 @@
                     </section>
                   </div>
                 </div>
-                
+
                 <div class="col-md-6 pr-md-1">
                   <div class="form-group">
                     <label>Username</label>
                     <input type="text" class="form-control" value="{{current_user.username}}"  readonly>
                   </div>
                 </div>
-                
+
               </div>
               <div class="row">
                 <div class="col-md-6 pr-md-1">
                   <div class="form-group">
                     <label>First Name</label>
-                    <input type="text" class="form-control" placeholder="Company" value="Mike">
+                    <input type="text" class="form-control" placeholder="Company" value="Vic">
                   </div>
                 </div>
                 <div class="col-md-6 pl-md-1">
                   <div class="form-group">
                     <label>Last Name</label>
-                    <input type="text" class="form-control" placeholder="Last Name" value="Andrew">
+                    <input type="text" class="form-control" placeholder="Last Name" value="Mir">
                   </div>
                 </div>
               </div>
@@ -74,7 +82,7 @@
                 <div class="col-md-12">
                   <div class="form-group">
                     <label>Address</label>
-                    <input type="text" class="form-control" placeholder="Home Address" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09">
+                    <input type="text" class="form-control" placeholder="Home Address" value="Shevchenko av 1">
                   </div>
                 </div>
               </div>
@@ -82,19 +90,19 @@
                 <div class="col-md-4 pr-md-1">
                   <div class="form-group">
                     <label>City</label>
-                    <input type="text" class="form-control" placeholder="City" value="Mike">
+                    <input type="text" class="form-control" placeholder="City" value="Odesa">
                   </div>
                 </div>
                 <div class="col-md-4 px-md-1">
                   <div class="form-group">
                     <label>Country</label>
-                    <input type="text" class="form-control" placeholder="Country" value="Andrew">
+                    <input type="text" class="form-control" placeholder="Country" value="Ukraine">
                   </div>
                 </div>
                 <div class="col-md-4 pl-md-1">
                   <div class="form-group">
                     <label>Postal Code</label>
-                    <input type="number" class="form-control" placeholder="ZIP Code">
+                    <input type="number" class="form-control" placeholder="Postal Code" value="65044">
                   </div>
                 </div>
               </div>
@@ -102,14 +110,16 @@
                 <div class="col-md-8">
                   <div class="form-group">
                     <label>About Me</label>
-                    <textarea rows="4" cols="80" class="form-control" placeholder="Here can be your description" value="Mike">Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</textarea>
+                    <textarea rows="4" cols="80" class="form-control" placeholder="Here can be your description" value="Vic">contra spem spero!</textarea>
                   </div>
                 </div>
               </div>
             </form>
           </div>
           <div class="card-footer">
+            <div class="user-button">
             <button type="submit" class="btn btn-fill btn-primary">Save</button>
+            </div>
           </div>
         </div>
       </div>
@@ -123,16 +133,16 @@
                 <div class="block block-three"></div>
                 <div class="block block-four"></div>
                 <a href="javascript:void(0)">
-                  <img class="avatar" src="{{ config.ASSETS_ROOT }}/img/emilyz.jpg" alt="...">
-                  <h5 class="title">Mike Andrew</h5>
+                  <img class="avatar" src="{{ config.ASSETS_ROOT }}/img/eigithub.jpg" alt="...">
+                  <h5 class="title">Vic Mir</h5>
                 </a>
                 <p class="description">
-                  Ceo/Co-Founder
+                  Student
                 </p>
               </div>
             </p>
             <div class="card-description">
-              Do not be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
+              Is this the real life? Is this just fantasy? Caught in a landslide, no escape from reality Open your eyes, look up to the skies and see I'm just a poor girl, I need no sympathy Because I'm easy come, easy go, little high, little low Any way the wind blows doesn't really matter to me, to me
             </div>
           </div>
           <div class="card-footer">
