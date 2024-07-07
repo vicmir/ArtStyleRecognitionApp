@@ -22,7 +22,7 @@ wget http://web.fsktm.um.edu.my/~cschan/source/ICIP2017/wikiart_csv.zip
 
 Unzip the folders, and move them to the ... folder of the package.
 
-## Jupyter notebooks:
+## Jupyter notebooks
 
 TBA
 
