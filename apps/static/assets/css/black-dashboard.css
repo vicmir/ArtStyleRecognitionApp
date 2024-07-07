@@ -3540,6 +3540,7 @@ input[type="button"].btn-block {
 
 .card-header {
   padding: 1.25rem 1.5rem;
+
   margin-bottom: 0;
   background-color: #f6f9fc;
   border-bottom: 0.0625rem solid rgba(34, 42, 66, 0.05); }
@@ -13027,6 +13028,7 @@ Copyright (c) 2015 Daniel Eden
   .card label {
     color: rgba(255, 255, 255, 0.6); }
   .card .card-title {
+    margin-top: 5%;
     margin-bottom: .75rem; }
   .card .card-body {
     padding: 15px; }
@@ -13050,7 +13052,7 @@ Copyright (c) 2015 Daniel Eden
       color: #ffffff;
       font-weight: 100; }
     .card .card-header .card-category {
-      color: #9A9A9A;
+      font-weight: 100;
       margin-bottom: 5px;
       font-weight: 300; }
   .card .map {
@@ -13196,7 +13198,7 @@ Copyright (c) 2015 Daniel Eden
 .card-chart {
   overflow: hidden; }
   .card-chart .card-header .card-title i {
-    font-size: 16px;
+    font-size: 30px;
     margin-right: 5px;
     margin-bottom: 3px; }
   .card-chart .card-header .card-category {
