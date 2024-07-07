@@ -24,6 +24,8 @@ Unzip the folders, and move them to the ... folder of the package.
 
 ## Jupyter notebooks:
 
+TBA
+
 ## Features
 
 - **Art Style Recognition**: Automatically classify images into different art styles using a trained deep learning model.
