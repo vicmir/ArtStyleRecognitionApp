@@ -24,7 +24,7 @@ Unzip the folders, and move them to the ... folder of the package.
 
 ## Jupyter notebooks
 
-TBA
+https://github.com/vicmir/ArtStyleRecognitionApp/tree/master/notebooks
 
 ## Features
 
