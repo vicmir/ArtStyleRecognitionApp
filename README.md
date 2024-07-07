@@ -6,7 +6,21 @@ Template credits: https://github.com/app-generator/flask-black-dashboard
 
 ## Data
 
-**Dataset:** https://www.wikiart.org/
+**Dataset:** https://www.wikiart.org/, Repository: https://github.com/cs-chan/ArtGAN/tree/master/WikiArt%20Dataset
+
+Download the images:
+
+```sh
+wget http://web.fsktm.um.edu.my/~cschan/source/ICIP2017/wikiart.zip
+```
+
+Download the csv files:
+
+```sh
+wget http://web.fsktm.um.edu.my/~cschan/source/ICIP2017/wikiart_csv.zip
+```
+
+Unzip the folders, and move them to the ... folder of the package.
 
 **Jupyter notebooks:**
 
