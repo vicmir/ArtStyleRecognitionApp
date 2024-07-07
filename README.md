@@ -1,13 +1,14 @@
 # Art Style Recognition Web Application
 
-About:
-
-
-Dataset: https://www.wikiart.org/
-
-Jupyter notebooks:
+This project is a web application designed to automatically recognize and classify art styles in images using deep learning techniques. The application leverages convolutional neural networks (CNNs) for image classification, providing an efficient and user-friendly tool for art analysis.
 
 Template credits: https://github.com/app-generator/flask-black-dashboard
+
+## Data
+
+**Dataset:** https://www.wikiart.org/
+
+**Jupyter notebooks:**
 
 ## Features
 
