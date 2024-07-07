@@ -1,37 +1,244 @@
 {% extends "layouts/base.html" %}
 
-{% block title %} Maps {% endblock %} 
+{% block title %} Upload {% endblock %}
 
 <!-- Specific Page CSS goes HERE  -->
-{% block stylesheets %}{% endblock stylesheets %}
+{% block stylesheets %}
+
+<style>
+  .index-text {
+    font-size: 1.6875rem;
+    font-weight: 100;
+    text-align: center;
+    padding: 15px 15px 35px 15px;
+  }
+
+  .upload-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .upload-section1, .upload-section2 {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .upload-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .upload-button:hover {
+    background-color: #f5f5f5;
+  }
+
+  .upload-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+
+  .start-button {
+    margin-top: -10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .result {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+
+  .result-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+<!--    align-items: center; /* Центрирование по вертикали */-->
+    margin-bottom: 20px; /* Добавление нижнего отступа */
+  }
+
+<!--  .result-image {-->
+<!--    flex: 1;-->
+<!--    text-align: center;-->
+<!--  }-->
+
+  .result-image {
+    flex: 1;
+    text-align: center;
+    max-width: 45%;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+  .result-image img {
+    width: 100%;
+    height: 100%;
+<!--    border-radius: 8px;-->
+  }
+
+<!--  .result-text {-->
+<!--    flex: 2;-->
+<!--    padding: 20px;-->
+<!--    border-radius: 8px;-->
+<!--    background-image: linear-gradient(to bottom left, #e14eca, #ba54f5, #e14eca);-->
+<!--    background-size: 210% 210%;-->
+<!--    background-position: top right;-->
+<!--    background-color: #e14eca;-->
+<!--    transition: all 0.15s ease;-->
+<!--    box-shadow: none;-->
+<!--    text-color: #ffffff;-->
+<!--  }-->
+
+   .result-text {
+     flex: 2;
+     padding: 20px;
+     border-radius: 8px;
+     background-image: linear-gradient(to bottom left, #e14eca, #ba54f5, #e14eca);
+     background-size: 210% 210%;
+     background-position: top right;
+     background-color: #e14eca;
+     transition: all 0.15s ease;
+     background-color: #e14eca;
+     transition: all 0.15s ease;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+  }
+
+  .result-text h5 {
+    font-size: 1.5rem;
+  }
+
+  .result-text p {
+    font-size: 1.25rem;
+  }
+
+</style>
+
+{% endblock stylesheets %}
 
 {% block content %}
 
-  <div class="content">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="card card-plain">
-          <div class="card-header">
-            Google Maps
-          </div>
-          <div class="card-body">
-            <div id="map" class="map"></div>
-          </div>
+<div class="content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="title">Upload an artwork</h5>
         </div>
       </div>
     </div>
   </div>
+  <form id="uploadForm" enctype="multipart/form-data" method="post" action="/upload">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card card-chart">
+          <div class="card-header">
+            <div class="card-category">
+              <div class="index-text">
+                <div class="upload-buttons">
+                  <div class="upload-section1">
+                    <div class="upload-button" onclick="document.getElementById('fileInput').click();">
+                      <h3 class="card-title"><i class="tim-icons icon-laptop upload-icon"></i></h3>
+<!--                      <input type="file" id="fileInput" style="display: none;" />-->
+                      <input type="file" id="fileInput" name="file" style="display: none;" />
+                      <p>Upload from PC</p>
+                    </div>
+                  </div>
+                  <div class="upload-section2">
+                    <div class="upload-button" onclick="promptUrl();">
+                      <h3 class="card-title"><i class="tim-icons icon-link-72 upload-icon"></i></h3>
+                      <p>Upload from URL</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="index-text">
+    <button class="btn btn-primary start-button">Start</button>
+    </div>
+  </form>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+<!--          <div class="index-text">-->
+            <h5 class="title">Discover the results</h5>
+            <div class="result" id="result"></div>
+            <div class="result-container">
+<!--              <div class="result-image">-->
+<!--&lt;!&ndash;                <img id="uploadedImage" src="{{ config.ASSETS_ROOT }}/gallery/morningwalk.jpg" alt="Uploaded Image" style="width: 100%; max-width: 400px;">&ndash;&gt;-->
+<!--              </div>-->
+<!--              <div class="result-text">-->
+<!--&lt;!&ndash;                <p><b>Recognised style:</b> Impressionism</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p><b>Years of Activity:</b> From the 1860s to the 1890s</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p><b>Artists:</b> Claude Monet, Pierre-Auguste Renoir, Edgar Degas, Camille Pissarro, Alfred Sisley</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p><b>Description:</b> Impressionism emerged in France in the late 19th century as a revolutionary art movement characterized by its focus on capturing the transient effects of light and color. Unlike the detailed realism of previous styles, Impressionists used loose brushwork and vibrant hues to depict everyday scenes, often painting en plein air (outdoors) to observe natural light directly. This approach led to a sense of immediacy and movement in their work, with subjects ranging from landscapes and cityscapes to intimate moments of modern life. The movement challenged traditional art conventions and laid the groundwork for various subsequent modern art styles. Key features of Impressionism include a vivid palette, visible brushstrokes, and an emphasis on the overall impression rather than fine detail.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p></p>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p></p>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p></p>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p></p>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p></p>&ndash;&gt;-->
+<!--              </div>-->
+            </div>
+<!--          </div>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% endblock content %}
 
 <!-- Specific Page JS goes HERE  -->
 {% block javascripts %}
 
-  <script>
-    $(document).ready(function() {
-      // Javascript method's body can be found in assets/js/demos.js
-      demo.initGoogleMaps();
+<script>
+
+  document.getElementById('uploadForm').onsubmit = function(event) {
+
+    event.preventDefault();
+
+    var formData = new FormData(document.getElementById('uploadForm'));
+
+    fetch('/upload', {
+      method: 'POST',
+      body: formData
+    })
+
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('result').innerText = 'Predicted Style: ' + data.style;
+    })
+
+    .catch(error => {
+      console.error('Error:', error);
     });
-  </script>
+  };
+
+
+  function promptUrl() {
+    var url = prompt("Enter the image URL:");
+    if (url) {
+      // Here you can add code to handle the URL input
+      console.log("URL entered: " + url);
+    }
+  }
+</script>
 
 {% endblock javascripts %}
