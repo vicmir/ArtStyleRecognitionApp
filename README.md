@@ -164,18 +164,10 @@ The project is coded using blueprints, app factory pattern, dual configuration p
 
 ## Screenshots
 
-![image](https://github.com/vicmir/ArtStyleRecognitionApp/assets/79836020/11d09e06-7d7a-482b-9acc-dd0b2dc6cc56)
+![image](https://github.com/vicmir/ArtStyleRecognitionApp/assets/79836020/50a43483-da02-45fb-b340-8111e7e9c403)
 
-![image](https://github.com/vicmir/ArtStyleRecognitionApp/assets/79836020/96149290-db4e-4a84-937e-80a2dbcb0fd9)
+![image](https://github.com/vicmir/ArtStyleRecognitionApp/assets/79836020/c03a3e1c-a948-4600-be94-6e9a63217914)
 
-![image](https://github.com/vicmir/ArtStyleRecognitionApp/assets/79836020/210e3650-69f0-435a-bbb7-963e1142b038)
+![image](https://github.com/vicmir/ArtStyleRecognitionApp/assets/79836020/8f8367d2-040a-41d1-b0a2-e59e949134ce)
 
-![image](https://github.com/vicmir/ArtStyleRecognitionApp/assets/79836020/6f541b56-f6e8-46f6-b2a4-6b5134014181)
-
-![image](https://github.com/vicmir/ArtStyleRecognitionApp/assets/79836020/e8b521ef-b0c4-4ab8-974f-f06c7c29e289)
-
-![image](https://github.com/vicmir/ArtStyleRecognitionApp/assets/79836020/48978025-9107-4555-9b81-844630573f34)
-
-![image](https://github.com/vicmir/ArtStyleRecognitionApp/assets/79836020/3605b0f1-35c8-4d43-a4df-989c1831e539)
-
-![image](https://github.com/vicmir/ArtStyleRecognitionApp/assets/79836020/2be08500-5f0b-4287-9f15-ec876db18fba)
+![image](https://github.com/vicmir/ArtStyleRecognitionApp/assets/79836020/a8a0bbc7-4f4b-41fa-97b5-8b1a0a8f12c3)
