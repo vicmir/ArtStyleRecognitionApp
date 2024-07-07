@@ -1,9 +1,51 @@
 {% extends "layouts/base.html" %}
 
-{% block title %} Dashboard {% endblock %} 
+{% block title %} Home {% endblock %}
 
 <!-- Specific Page CSS goes HERE  -->
-{% block stylesheets %}{% endblock stylesheets %}
+{% block stylesheets %}
+
+    <style>
+
+        .header-image-container {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .header-image-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100px;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 90%);
+
+        }
+
+        .header-text {
+            padding-left: 20px;
+            flex: 1;
+        }
+
+        .index-text {
+            font-size: 1.6875rem;
+            font-weight: 100;
+            text-align: center;
+        }
+
+        .index-text p {
+            font-size: 0.875rem;
+            color: #1d253b;
+        }
+
+        .user-button {
+            text-align: center;
+        }
+    </style>
+
+{% endblock stylesheets %}
 
 {% block content %}
 
@@ -11,13 +53,23 @@
         <div class="row">
             <div class="col-12">
                 <div class="card card-chart">
-                    <div class="card-header ">
+                    <div class="card-header">
                         <div class="row">
                             <div class="col-sm-6 text-left">
-                                <h5 class="card-category">Total Shipments</h5>
-                                <h2 class="card-title">Performance</h2>
+                                <div class="header-image-container">
+                                    <img src="{{ config.ASSETS_ROOT }}/img/sorollastrollingseashore1.jpg"}} alt="Logo" class="header-image">
+                                </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="header-text">
+                                <!--<h5 class="card-category"></h5>-->
+                                <h2 class="card-title">Welcome to the Art Style Recognition App!</h2>
+                                <p>Here you can discover art style of your favourite artworks!</p>
+                            </div>
+                            <!--<div class="col-sm-6 text-left">
+                                <h5 class="card-category"></h5>
+                                <h2 class="card-title">Welcome to the Art Style Recognition App!</h2>
+                            </div>-->
+                            <!--<div class="col-sm-6">
                                 <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
                                     <label class="btn btn-sm btn-primary btn-simple active" id="0">
                                         <input type="radio" name="options" checked>
@@ -41,59 +93,74 @@
                     </span>
                                     </label>
                                 </div>
+                            </div>-->
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <!--<div class="chart-area">
+                            <canvas id="chartBig1"></canvas>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card card-chart">
+                    <div class="card-header">
+                        <div class="card-category">
+                            <h5 class="index-text">Step 1</h5>
+                            <div class="index-text">
+                            <h3 class="card-title"><i class="tim-icons icon-image-02"></i></h3>
+                                <p>Choose an artwork</p>
                             </div>
                         </div>
                     </div>
                     <div class="card-body">
-                        <div class="chart-area">
-                            <canvas id="chartBig1"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="card card-chart">
-                    <div class="card-header">
-                        <h5 class="card-category">Total Shipments</h5>
-                        <h3 class="card-title"><i class="tim-icons icon-bell-55 text-primary"></i> 763,215</h3>
-                    </div>
-                    <div class="card-body">
-                        <div class="chart-area">
+                        <!--<div class="chart-area">
                             <canvas id="chartLinePurple"></canvas>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="card card-chart">
                     <div class="card-header">
-                        <h5 class="card-category">Daily Sales</h5>
-                        <h3 class="card-title"><i class="tim-icons icon-delivery-fast text-info"></i> 3,500€</h3>
+                        <div class="card-category">
+                            <h5 class="index-text">Step 2</h5>
+                            <div class="index-text">
+                            <h3 class="card-title"><i class="tim-icons icon-upload"></i></h3>
+                                <p>Upload an artwork</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="card-body">
-                        <div class="chart-area">
+                        <!--<div class="chart-area">
                             <canvas id="CountryChart"></canvas>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="card card-chart">
                     <div class="card-header">
-                        <h5 class="card-category">Completed Tasks</h5>
-                        <h3 class="card-title"><i class="tim-icons icon-send text-success"></i> 12,100K</h3>
+                        <div class="card-category">
+                            <h5 class="index-text">Step 3</h5>
+                            <div class="index-text">
+                            <h3 class="card-title"><i class="tim-icons icon-chat-33"></i></h3>
+                                <p>Recognise an art style of the artwork</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="card-body">
-                        <div class="chart-area">
+                        <!--<div class="chart-area">
                             <canvas id="chartLineGreen"></canvas>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
+        <!--<div class="row">
             <div class="col-lg-6 col-md-12">
                 <div class="card card-tasks">
                     <div class="card-header ">
@@ -387,6 +454,9 @@
                     </div>
                 </div>
             </div>
+        </div>-->
+        <div class="user-button">
+            <button type="button" class="btn btn-fill btn-primary" onclick="window.location.href='http://127.0.0.1:5000/map.html'">Upload an artwork</button>
         </div>
     </div>
 
