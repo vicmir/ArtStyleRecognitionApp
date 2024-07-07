@@ -171,3 +171,5 @@ The project is coded using blueprints, app factory pattern, dual configuration p
 ![image](https://github.com/vicmir/ArtStyleRecognitionApp/assets/79836020/8f8367d2-040a-41d1-b0a2-e59e949134ce)
 
 ![image](https://github.com/vicmir/ArtStyleRecognitionApp/assets/79836020/a8a0bbc7-4f4b-41fa-97b5-8b1a0a8f12c3)
+
+## Live Demo
