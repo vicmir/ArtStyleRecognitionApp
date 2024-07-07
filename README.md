@@ -4,7 +4,9 @@ This project is a web application designed to automatically recognize and classi
 
 Template credits: https://github.com/app-generator/flask-black-dashboard
 
-## Data
+## Art Style Recognition Model Development
+
+### Data
 
 **Dataset:** https://www.wikiart.org/, Repository: https://github.com/cs-chan/ArtGAN/tree/master/WikiArt%20Dataset
 
@@ -22,7 +24,7 @@ wget http://web.fsktm.um.edu.my/~cschan/source/ICIP2017/wikiart_csv.zip
 
 Unzip the folders, and move them to the ... folder of the package.
 
-## Jupyter notebooks
+### Jupyter notebooks
 
 https://github.com/vicmir/ArtStyleRecognitionApp/tree/master/notebooks
 
