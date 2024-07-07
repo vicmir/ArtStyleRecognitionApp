@@ -1,5 +1,14 @@
 # Art Style Recognition Web Application
 
+About:
+
+
+Dataset: https://www.wikiart.org/
+
+Jupyter notebooks:
+
+Template credits: https://github.com/app-generator/flask-black-dashboard
+
 ## Features
 
 - **Art Style Recognition**: Automatically classify images into different art styles using a trained deep learning model.
