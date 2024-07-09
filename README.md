@@ -75,22 +75,22 @@ The project is organized as follows:
 - Install modules via `VENV`:
 
    ```sh
-   $ virtualenv env
-   $ source env/bin/activate
-   $ pip3 install -r requirements.txt
+   virtualenv env
+   source env/bin/activate
+   pip3 install -r requirements.txt
    ```
 
 - Set Up Flask Environment:
 
    ```sh
-   $ export FLASK_APP=run.py
-   $ export FLASK_ENV=development
+   export FLASK_APP=run.py
+   export FLASK_ENV=development
    ```
 
 - Start the app:
 
    ```sh
-   $ flask run
+   flask run
    ```
    
 3. Set Up for `Windows`:
@@ -98,27 +98,27 @@ The project is organized as follows:
 - Install modules via `VENV`:
 
    ```sh
-   $ virtualenv env
-   $ .\env\Scripts\activate
-   $ pip3 install -r requirements.txt
+   virtualenv env
+   .\env\Scripts\activate
+   pip3 install -r requirements.txt
    ```
 
 - Set Up Flask Environment:
 
    ```sh
    # CMD
-   $ set FLASK_APP=run.py
-   $ set FLASK_ENV=development
+   set FLASK_APP=run.py
+   set FLASK_ENV=development
    
    # Powershell
-   $ $env:FLASK_APP = ".\run.py"
-   $ $env:FLASK_ENV = "development"
+   env:FLASK_APP = ".\run.py"
+   env:FLASK_ENV = "development"
    ```
 
 - Start the app:
 
    ```sh
-   $ flask run
+   flask run
    ```
 
 4. Open your web browser and go to `http://127.0.0.1:5000`.
