@@ -1,4 +1,6 @@
-# 🎨 Art Style Recognition Web Application
+<!--# 🎨 Art Style Recognition Web Application-->
+
+<h1 align="center">🎨 Art Style Recognition Web Application</h1>
 
 This project is a web application designed to automatically recognize and classify art styles in images using deep learning techniques. The application leverages convolutional neural networks (CNNs) for image classification, providing an efficient and user-friendly tool for art analysis.
 
