@@ -2,9 +2,10 @@
 
 <h1 align="center">🎨 Art Style Recognition Web Application</h1>
 
+<p align="center"> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" /> <img src="https://img.shields.io/badge/HTML%2F CSS %2F JS-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000000" alt="HTML/CSS/JS" /> <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" /> <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" /> <img src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white" alt="Keras" /> <img src="https://img.shields.io/badge/Pillow-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Pillow" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" /> </p>
+
 This project is a web application designed to automatically recognize and classify art styles in images using deep learning techniques. The application leverages convolutional neural networks (CNNs) for image classification, providing an efficient and user-friendly tool for art analysis.
 
-Template credits: https://github.com/app-generator/flask-black-dashboard
 
 ## Art Style Recognition Model Development
 
